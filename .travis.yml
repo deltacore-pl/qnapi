@@ -99,7 +99,7 @@ install:
   - if [[ "$QT_BASE" = "59" && "$TRAVIS_OS_NAME" = "linux" ]]; then sudo apt-get install -qq qt59base; source /opt/qt59/bin/qt59-env.sh; fi
   - if [[ "$QT_BASE" = "55" && "$TRAVIS_OS_NAME" = "osx" ]]; then brew install qt@5.5; brew link --force qt@5.5; fi
   - if [[ "$QT_BASE" = "57" && "$TRAVIS_OS_NAME" = "osx" ]]; then brew install qt@5.7; brew link --force qt@5.7; fi
-  - if [[ "$QT_BASE" = "59" && "$TRAVIS_OS_NAME" = "osx" ]]; then brew install qt; brew link --force qt; fi
+  - if [[ "$QT_BASE" = "59" && "$TRAVIS_OS_NAME" = "osx" ]]; then brew install qt@5.9; brew link --force qt@5.9; fi
     
 
 script:
